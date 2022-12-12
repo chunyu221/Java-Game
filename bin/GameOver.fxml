@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameOverController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gameover.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="score" fill="WHITE" layoutX="437.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="85.0" fitWidth="170.0" layoutX="622.0" layoutY="415.0" onMouseClicked="#onExitPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button_exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="170.0" layoutX="183.0" layoutY="415.0" onMouseClicked="#onRestartPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button_restart.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="_new" fitHeight="50.0" fitWidth="142.0" layoutX="361.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" rotate="-17.7" visible="false">
+         <image>
+            <Image url="@New%20.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuCotroller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="170.0" layoutX="709.0" layoutY="393.0" onMousePressed="#onExitPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button_exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="170.0" layoutX="415.0" layoutY="393.0" onMouseClicked="#onHardPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button_hard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="170.0" layoutX="127.0" layoutY="393.0" onMouseClicked="#onEasyPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button_easy.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="high" fill="WHITE" layoutX="59.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Score: 0" wrappingWidth="476.96429443359375">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
